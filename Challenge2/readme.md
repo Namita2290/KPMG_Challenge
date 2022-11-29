@@ -4,7 +4,7 @@ We need to write code that will query the meta data of an instance within AWS an
 
 <b>I have written this script in powershell using Az and Az.ResourceGraph Module. I have used Managed Service Identity to login to Azure Resource Manager.</b>
 
-        A script to query metadate of an azure virtual machine.
+        A script to query metadata of an azure virtual machine.
         This script utilizes Az.ResoruceGraph powershell module to query the meatadata of an azure virtual machine of your choice and returns the data in the JSON format.
         It can also print the specific properties metadata of the virtual machine.
 
