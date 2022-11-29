@@ -104,7 +104,7 @@ resource "azurerm_subnet_network_security_group_association" "web_tier_nsg_subne
   network_security_group_id = azurerm_network_security_group.web_tier_nsg.id
 }
 
-#create public ip for oublic facing load balancer
+#create public ip for public facing load balancer
 resource "azurerm_public_ip" "lb_pip_web_tier" {
  name                         = "${var.resources_prefix}_lb_public_ip"
  location                     = var.location
