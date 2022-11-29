@@ -119,7 +119,7 @@ resource "azurerm_lb_rule" "app_tier_lbnatrule" {
    backend_port                   = "80"
    backend_address_pool_id        = azurerm_lb_backend_address_pool.app_tier_bapool.id
    probe_id                       = azurerm_lb_probe.app_tier_lb_probe.id
-   frontend_ip_configuration_name = ""
+   frontend_ip_configuration_name = "PublicIPAddress"
 }
 
 #App tier VMs created in a scale set
