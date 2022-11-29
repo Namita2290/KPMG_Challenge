@@ -27,7 +27,7 @@ param()
 try{
     
     Write-Host "Runnign query..."
-    $instanceData = Search-AzGraph -Query $query -Subscription $subscriptionId -First 1000     
+    $instanceData = Search-AzGraph -Query $query -Subscription $subscriptionId -First 100     
     
     if($instanceData){
         
