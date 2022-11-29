@@ -1,9 +1,7 @@
-terraform {
-  required_version = ">= 0.14"
-    required_providers {
-        azure = {
-            source = "hashicorp/azurerm"
-            version = "2.89.0"
-        }
-  }
+resources_prefix = "test-kpmg"
+location = "East US"
+default_resources_tags = {
+
+    Name = "KPMG-test"
+    App = "Three Tier Architecture"
 }
