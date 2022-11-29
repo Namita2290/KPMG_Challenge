@@ -16,7 +16,7 @@ Directory Structure:
 Web Tier Summary:
 
 1. A web tier subnet is created for virtual machines in the scale set.
-2. An NSG dedicated to this subnet will be created to allow web traffic from Internet and through the external external load balancers to virtual machines.
+2. An NSG dedicated to this subnet will be created to allow web traffic from Internet and through the external load balancers to virtual machines.
 3. <b>You can also add a rule to allow SSH or RDP from an allowed source IP address, such as a “jump box” virtual machine in subnet.</b>
 
 Following rules will be applied in the web tier NSG:
