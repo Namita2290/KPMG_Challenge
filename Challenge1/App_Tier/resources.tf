@@ -63,7 +63,7 @@ resource "azurerm_network_security_rule" "app_tier_lb_probe_rule" {
   
 }
 
-#block traffic to the business tier from other resoruces in vnet
+#block traffic to the App tier from other resoruces in vnet
 resource "azurerm_network_security_rule" "app_tier_block_vnet_rule" {
   
     name                       = "app-tier-allow-lb-probe"
