@@ -21,4 +21,7 @@ We need to write code that will query the meta data of an instance within AWS an
 
         To get the meta data of a specific property of the VM, use
         explore-metadata.ps1 -subscriptionid "" -resourceGroupName "" -hostname "" -propertyKey ""
+        
+        Note : Using curl command also we can retrieve meta data instance detail from the VM's provisioned via Azure Resource Manager
+        curl -H Metadata:true http://169.254.169.254/metadata/instance?api-version=2017-03-01
 
